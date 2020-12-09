@@ -226,31 +226,6 @@ print("Accuracy of the model is - " , ak.evaluate(test_generator)[1]*100 , "%")
 tf.keras.models.save_model(ak, 'kk.hdf5')
 
 
-# In[25]:
-
-
-get_ipython().system('pip install streamlit')
-
-
-# In[34]:
-
-
-get_ipython().run_cell_magic('writefile', 'app.py', 'import tensorflow as tf\nimport streamlit as st\n\n\n@st.cache(allow_output_mutation=True)\ndef main():\n    model = tf.keras.models.load_model(\'/Documents/kk.hdf5\')\n    return model\nmodel = main()\nst.write(""" \n# Genu Valgum Detection\n"""\n        )\nfile = st.file_uploader("Please upload your legs Image", type=["jpg", "png"])\nimport cv2\nfrom PIL import Image, ImageOps\nimport numpy as np\ndef import_and_predict(image_data, model):\n    size = (128,128)\n    image = ImageOps.fit(image_data, size, Image.ANTIALIAS)\n    img = np.asarray(image)\n    img_reshape = img[np.newaxis,...]\n    predition = moel.predict(img_reshape)\n    return prediction\nif file is None:\n    st.text("Please upload an image file")\nelse:\n    image = Image.open(file)\n    st.image(image, use_column_width=True)\n    predictions = import_and_predict(image, model)\n    class_names = [\'knockknees\', \'normal\']\n    string = "This Image is Most likely is:" + class_name[np.argmax(predictions)]\n    st.success(string)\n\nif __name__ == \'__main__\':\n    main()')
-
-
-# In[35]:
-
-
-get_ipython().system('ngrok authtoken 1komlBLfjjCtMlDq46mvTsZUbJa_7Scy8FJshzbj1ZwPAwQxC')
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
