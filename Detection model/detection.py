@@ -219,7 +219,31 @@ plt.figure()
 print("Loss of the model is - " , ak.evaluate(test_generator)[0]*100 , "%")
 print("Accuracy of the model is - " , ak.evaluate(test_generator)[1]*100 , "%")
 
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.models import load_model
 
+def load_image(filename):
+	# load the image
+	img = load_img(filename, target_size=(150,150))
+	# convert to array
+	img = img_to_array(img)
+	# reshape into a single sample with 3 channels
+	img = img.reshape(1,150,150, 3)
+	# center pixel data
+	img = img.astype('float32')
+	img = img - [123.68, 116.779, 103.939]
+	return img
+
+# load an image and predict the class
+	# load the image
+img = load_image('X:/miniproject/train/knockknees/image_0_2.jpeg')
+# predict the class
+result = ak.predict(img)
+if(result[0]==1):
+  print("It's X-Ray of patient having Pneumonia.")
+else:
+  print("It's X-Ray of a Normal Patient.")
 # In[24]:
 
 #saving the model
