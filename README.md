@@ -14,5 +14,6 @@ Treatment for genu valgum depends on the cause and severity of your symptoms.For
 
 # Detection using Computational Neural Networks
 Attained an accuracy of 80-85% and beyond.
+![alt text](http://url/to/.png)
 # Detection using Resnet50
 Studied the concept using ResNet50 
