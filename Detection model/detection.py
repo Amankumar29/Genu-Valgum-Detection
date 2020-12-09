@@ -58,13 +58,13 @@ val = "X:/miniproject/val"
 # In[4]:
 
 
-train_normal = "X:/miniproject/train/normal"
-train_knockknees = "X:/miniproject/train/knockknees"
+train_normal = "X:/miniproject/train/normal"                           #training images dataset for normal
+train_knockknees = "X:/miniproject/train/knockknees"                    #training images dataset for normal
 
 
 # In[5]:
 
-
+#ploting graph of training dataset 1. knockknees 2.normal
 import seaborn as sns
 sns.set_style('whitegrid')
 sns.barplot(x=['Normal','knockknees'],y=[len(train_normal), len(train_knockknees )])
@@ -72,7 +72,7 @@ sns.barplot(x=['Normal','knockknees'],y=[len(train_normal), len(train_knockknees
 
 # In[6]:
 
-
+#declaring input image height and width
 input_height=128
 input_width=128
 batch_size=32
@@ -107,7 +107,7 @@ train_ds.class_names
 
 # In[9]:
 
-
+#displaying the images of training dataset by labeling 
 plt.figure(figsize=(15,15))
 for images, labels in train_ds.take(1):
     for i in range(25):
@@ -119,7 +119,7 @@ for images, labels in train_ds.take(1):
 
 
 # In[10]:
-
+#image augmentation
 
 training_dir = "X:/miniproject/train"
 training_generator = ImageDataGenerator(rescale=1./255,
@@ -146,7 +146,7 @@ test_generator = testing_generator.flow_from_directory(testing_dir,target_size=(
 
 
 # In[13]:
-
+#building the neural networks
 
 ak=tf.keras.Sequential([
     tf.keras.layers.Conv2D(32,(3,3),input_shape=(200,200,3),activation='relu'),
@@ -186,17 +186,17 @@ ak.compile(optimizer = tf.keras.optimizers.Adam(lr=0.001), loss = 'binary_crosse
 
 # In[16]:
 
-
+#training the model 
 history = ak.fit_generator(train_generator,
                            validation_data = valid_generator,
                            steps_per_epoch = 70,
                            epochs = 10,
                            verbose = 1)
 
-
+#attaining aron 85-90% accuracy
 # In[17]:
 
-
+#graph representation of train accuracy and val_accuracy
 accuracy = history.history['accuracy']
 val_accuracy = history.history['val_accuracy']
 loss = history.history['loss']
@@ -215,16 +215,16 @@ plt.figure()
 
 
 
-
+#printing total loss & accuracy
 print("Loss of the model is - " , ak.evaluate(test_generator)[0]*100 , "%")
 print("Accuracy of the model is - " , ak.evaluate(test_generator)[1]*100 , "%")
 
 
 # In[24]:
 
-
+#saving the model
 tf.keras.models.save_model(ak, 'kk.hdf5')
-
+#using the streamlit for deploment on web.
 
 
 
