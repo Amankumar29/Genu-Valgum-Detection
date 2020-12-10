@@ -2,7 +2,7 @@
 ## What is Genu Valgum ?
 Genu valgum, commonly called "knock-knee", is a condition in which the knees angle in and touch each other when the legs are straightened. Individuals with severe valgus deformities are typically unable to touch their feet together while simultaneously straightening the legs.
 The condition usually becomes apparent when a child is 2 to 3 years old, and it may increase in severity until about age 4. It usually self-corrects by the time a child is about 7 or 8 years old. 
-
+<img src ="Screenshot_2020-12-09 Mini project.png">
 ### What causes this condition?
 injury to or infection in your knee or leg.
 bone malformation from rickets, a disease caused by lack of vitamin D and calcium.
