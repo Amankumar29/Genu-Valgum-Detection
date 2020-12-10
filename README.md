@@ -26,3 +26,12 @@ Attained an accuracy of 80-85% and beyond.
 Studied the concept using ResNet50 and attained an accuracy of 75% and above.
 
 <img src ="XTo6Q.png">
+
+# Web Application using Streamlit
+
+A web Application also made where you can upload your images and check whether a person suffering from genu valgum or not.
+
+<img src="Screenshot (41).png">
+
+Please Check the Video Demonstration above :point_up_2:.
+Star :star2: if you find it helpful.
