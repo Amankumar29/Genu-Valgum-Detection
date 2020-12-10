@@ -33,5 +33,6 @@ A web Application also made where you can upload your images and check whether a
 
 <img src="Screenshot (41).png">
 
-Please Check the Video Demonstration above :point_up_2:.
-Star :star2: if you find it helpful.
+### Please Check the Video Demonstration above :point_up_2:.
+
+### Star :star2: if you find it helpful.
