@@ -12,12 +12,15 @@ other bone diseases.
 obesity, which puts extra pressure on your knees.
 arthritis in your knee joints.
 ### How it can be treated?
-Treatment for genu valgum depends on the cause and severity of your symptoms.For          example, if rickets are causing your knock-knees, your doctor will likely prescribe vitamin D    and calcium supplements to help restore your levels.
+Treatment for genu valgum depends on the cause and severity of your symptoms.For example, if rickets are causing your knock-knees, your doctor will likely prescribe vitamin D and calcium supplements to help restore your levels.
 
 # Detection using Computational Neural Networks
 Attained an accuracy of 80-85% and beyond.
+
 <img src ="Screenshot_2020-12-09 detection - Jupyter Notebook.png">
 
 <img src ="Screenshot_2020-12-09 Mini project(1).png">
+
 # Detection using Resnet50
+
 Studied the concept using ResNet50 
