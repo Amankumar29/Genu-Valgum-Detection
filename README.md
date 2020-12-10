@@ -23,4 +23,6 @@ Attained an accuracy of 80-85% and beyond.
 
 # Detection using Resnet50
 
-Studied the concept using ResNet50 
+Studied the concept using ResNet50 and attained an accuracy of 75% and above.
+
+<img src ="XTo6Q.png">
