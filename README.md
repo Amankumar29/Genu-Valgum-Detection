@@ -1,4 +1,4 @@
-### Disclaimer: This Code cannot be used for anything that might be considered as commercial use.[license]("")
+### Disclaimer: This Code cannot be used for anything that might be considered as commercial use.[license]("License")
 # Genu-Valgum-Detection
 ## What is Genu Valgum ?
 Genu valgum, commonly called "knock-knee", is a condition in which the knees angle in and touch each other when the legs are straightened. Individuals with severe valgus deformities are typically unable to touch their feet together while simultaneously straightening the legs.
