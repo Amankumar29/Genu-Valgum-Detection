@@ -241,9 +241,9 @@ img = load_image('X:/miniproject/train/knockknees/image_0_2.jpeg')
 # predict the class
 result = ak.predict(img)
 if(result[0]==1):
-  print("It's X-Ray of patient having Pneumonia.")
+  print("Person suffering from Knockknees.")
 else:
-  print("It's X-Ray of a Normal Patient.")
+  print("Person not suffering from Knockknees.")
 # In[24]:
 
 #saving the model
