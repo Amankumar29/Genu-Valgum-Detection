@@ -36,11 +36,12 @@ A web Application also made where you can upload your images and check whether a
 <img src="Screenshot (41).png">
 
 # Detection using OpenCV :
-1.Detecting keypoints using COCO Dataset
-2.Joining the points.
-3.Finding the angle between hip point, knee point, ankle point.
-4.If the difference between the angle is more than 20 degrees then printing genu valgum.
+1.Detecting keypoints using COCO Dataset<br/>
+2.Joining the points.<br/>
+3.Finding the angle between hip point, knee point, ankle point.<br/>
+4.If the difference between the angle is more than 20 degrees then printing genu valgum.<br/>
 
+<img src ="Output-Skeleton.jpg">
 
 ### Please Check the Video Demonstration above :point_up_2:.
 
